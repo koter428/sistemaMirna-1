@@ -1,5 +1,5 @@
 function mostrarListarProducto() {
-    let contenido = dameContenido("paginas/referenciales/producto/listar.php");
+    let contenido = dameContenido("modelo/referenciales/producto/listar.php");
     $("#contenido-principal").html(contenido);
     cargarTablaProductoes();
 }
@@ -7,7 +7,7 @@ function mostrarListarProducto() {
 //-----------------------------------------------------------------------------
 //-----------------------------------------------------------------------------
 function mostrarAgregarProductoes() {
-    let contenido = dameContenido("paginas/referenciales/producto/agregar.php");
+    let contenido = dameContenido("modelo/referenciales/producto/agregar.php");
     $("#contenido-principal").html(contenido);
     cargarListaCategorias("#categoria_lst");
     cargarListaTipoProducto("#tipo_lst");
@@ -145,7 +145,7 @@ $(document).on("click", ".editar-producto", function (evt) {
 
             } else {
                 let json_registro = JSON.parse(registro);
-                let contenido = dameContenido("paginas/referenciales/producto/agregar.php");
+                let contenido = dameContenido("modelo/referenciales/producto/agregar.php");
                 $("#contenido-principal").html(contenido);
 
                 cargarListaCategorias("#categoria_lst");

@@ -1,5 +1,5 @@
 function mostrarListarOrdenCompra() {
-    let contenido = dameContenido("paginas/movimientos/compra/orden_compra/listar.php");
+    let contenido = dameContenido("modelo/movimientos/compra/orden_compra/listar.php");
     $("#contenido-principal").html(contenido);
     cargarTablaOrdenCompra();
 }
@@ -7,7 +7,7 @@ function mostrarListarOrdenCompra() {
 //------------------------------------------------------------------------------
 //------------------------------------------------------------------------------
 function mostrarAgregarOrdenCompra() {
-    let contenido = dameContenido("paginas/movimientos/compra/orden_compra/agregar.php");
+    let contenido = dameContenido("modelo/movimientos/compra/orden_compra/agregar.php");
     $("#contenido-principal").html(contenido);
     cargarListaSucursal("#sucursal_lst");
     cargarListasProducto("#material_lst");
@@ -227,7 +227,7 @@ function cargarTablaOrdenCompra() {
 //----------------------------------------------------------------------------
 //----------------------------------------------------------------------------
 function imprimirOrdenCompra(id) {
-    window.open("paginas/movimientos/compra/orden_compra/print.php?id=" + id);
+    window.open("modelo/movimientos/compra/orden_compra/print.php?id=" + id);
 }
 //----------------------------------------------------------------------------
 //----------------------------------------------------------------------------

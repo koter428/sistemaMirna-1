@@ -1,5 +1,5 @@
 function mostrarListarPresupuestoCompra() {
-    let contenido = dameContenido("paginas/movimientos/compra/presupuesto/listar.php");
+    let contenido = dameContenido("modelo/movimientos/compra/presupuesto/listar.php");
     $("#contenido-principal").html(contenido);
     cargarTablaPresupuesto();
 }
@@ -7,7 +7,7 @@ function mostrarListarPresupuestoCompra() {
 //------------------------------------------------------------------------------
 //------------------------------------------------------------------------------
 function mostrarAgregarPresupuestoCompra() {
-    let contenido = dameContenido("paginas/movimientos/compra/presupuesto/agregar.php");
+    let contenido = dameContenido("modelo/movimientos/compra/presupuesto/agregar.php");
     $("#contenido-principal").html(contenido);
     cargarListaSucursal("#sucursal_lst");
     cargarListasProducto("#material_lst");
@@ -236,7 +236,7 @@ function cargarTablaPresupuesto() {
 //----------------------------------------------------------------------------
 //----------------------------------------------------------------------------
 function imprimirPresupuesto(id) {
-    window.open("paginas/movimientos/compra/presupuesto/print.php?id=" + id);
+    window.open("modelo/movimientos/compra/presupuesto/print.php?id=" + id);
 }
 //----------------------------------------------------------------------------
 //----------------------------------------------------------------------------

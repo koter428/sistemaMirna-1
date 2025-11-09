@@ -1,5 +1,5 @@
 //function mostrarListarProveedores() {
-//    let contenido = dameContenido("paginas/referenciales/proveedores/listar.php");
+//    let contenido = dameContenido("modelo/referenciales/proveedores/listar.php");
 //    $(".contenido-principal").html(contenido);
 //    cargarTablaProveedores("#proveedores_tb");
 //    console.log(contenido);
@@ -8,7 +8,7 @@
 ////----------------------------------------------------------------------------
 ////----------------------------------------------------------------------------
 //function mostrarAgregarProveedores() {
-//    let contenido = dameContenido("paginas/referenciales/proveedores/agregar.php");
+//    let contenido = dameContenido("modelo/referenciales/proveedores/agregar.php");
 //    $(".contenido-principal").html(contenido);
 //    cargarListaCiudad("#ciudad_lst");
 //}
@@ -27,7 +27,7 @@
 //        confirmButtonText: "Si"
 //    }).then((result) => {
 //        if (result.isConfirmed) {
-//            let contenido = dameContenido("paginas/referenciales/proveedores/listar.php");
+//            let contenido = dameContenido("modelo/referenciales/proveedores/listar.php");
 //            $(".contenido-principal").html(contenido);
 //            cargarTablaProveedores();
 //        }
@@ -197,7 +197,7 @@
 //            } else {
 //                let json_data = JSON.parse(response);
 //                //abrir ventana
-//                let contenido = dameContenido("paginas/referenciales/proveedores/agregar.php");
+//                let contenido = dameContenido("modelo/referenciales/proveedores/agregar.php");
 //                $(".contenido-principal").html(contenido);
 //                
 //
@@ -285,7 +285,7 @@
 ////-------------------------------------------------------------------------------
 ////-------------------------------------------------------------------------------
 //function imprimirProveedor(){
-//    window.open("paginas/referenciales/proveedores/print.php");
+//    window.open("modelo/referenciales/proveedores/print.php");
 //}
 //
 //

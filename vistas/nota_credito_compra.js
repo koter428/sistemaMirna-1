@@ -1,5 +1,5 @@
 function mostrarListarNotaCreditoCompra() {
-    let contenido = dameContenido("paginas/movimientos/compra/nota_credito/listar.php");
+    let contenido = dameContenido("modelo/movimientos/compra/nota_credito/listar.php");
     $("#contenido-principal").html(contenido);
     cargarTablaNotaCreditoCompra();
 }
@@ -7,7 +7,7 @@ function mostrarListarNotaCreditoCompra() {
 //------------------------------------------------------------------------------
 //------------------------------------------------------------------------------
 function mostrarAgregarNotaCreditoCompra() {
-    let contenido = dameContenido("paginas/movimientos/compra/nota_credito/agregar.php");
+    let contenido = dameContenido("modelo/movimientos/compra/nota_credito/agregar.php");
     $("#contenido-principal").html(contenido);
     cargarListaSucursal("#sucursal_lst");
     cargarListasProducto("#material_lst");
@@ -276,7 +276,7 @@ function cargarTablaNotaCreditoCompra() {
 //----------------------------------------------------------------------------
 //----------------------------------------------------------------------------
 function imprimirNotaCreditoCompra(id) {
-    window.open("paginas/movimientos/compra/nota_credito/print.php?id=" + id);
+    window.open("modelo/movimientos/compra/nota_credito/print.php?id=" + id);
 }
 //----------------------------------------------------------------------------
 //----------------------------------------------------------------------------

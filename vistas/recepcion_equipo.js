@@ -1,11 +1,11 @@
 function mostrarListarRecepcionEquipo() {
-    let contenido = dameContenido("paginas/movimientos/servicio/recepcion_equipo/listar.php");
+    let contenido = dameContenido("modelo/movimientos/servicio/recepcion_equipo/listar.php");
     $("#contenido-principal").html(contenido);
     cargarTablaRecepcionEquipo();
 }
 
 function mostrarAgregarRecepcionEquipo() {
-    let contenido = dameContenido("paginas/movimientos/servicio/recepcion_equipo/agregar.php");
+    let contenido = dameContenido("modelo/movimientos/servicio/recepcion_equipo/agregar.php");
     $("#contenido-principal").html(contenido);
     
     // Cargar listas necesarias
