@@ -15,12 +15,12 @@
     </div>
     <div class="col-md-4">
         <label>Sucursal</label>
-        <select type="text" id="sucursal_lst" class="form-control"></select>
+        <select type="text" id="sucursal" class="form-control"></select>
     </div>
 
     <div class="col-md-4">
         <label>Estado</label>
-        <select  id="estado_lst" class="form-control">
+        <select  id="estado" class="form-control">
             <option value="ACTIVO">ACTIVO</option>
             <option value="INACTIVO">INACTIVO</option>
         </select>

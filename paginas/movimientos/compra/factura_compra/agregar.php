@@ -14,11 +14,11 @@
     </div>
     <div class="col-md-3">
         <label for="">Sucursal</label>
-        <select name="" id="sucursal_lst" class="form-control"></select>
+        <select name="" id="sucursal" class="form-control"></select>
     </div>
     <div class="col-md-4">
         <label for="">Usuario</label>
-        <input type="text" id="usuario_lst" class="form-control" readonly value="<?= $_SESSION['nom_apellido']?>">
+        <input type="text" id="usuario" class="form-control" readonly value="<?= $_SESSION['nom_apellido']?>">
           
     </div>
     <div class="col-md-3">
@@ -39,7 +39,7 @@
     </div>
     <div class="col-md-3">
         <label for="">Condición</label>
-        <select name="" id="condicion_lst" class="form-control">
+        <select name="" id="condicion" class="form-control">
             <option value="CONTADO">CONTADO</option>
             <option value="CREDITO">CREDITO</option>
         </select>
@@ -62,19 +62,19 @@
     </div>
     <div class="col-md-12">
         <label>Orden de Compra</label>
-        <select name="" id="orden_compra_lst" class="form-control"></select>
+        <select name="" id="orden_compra" class="form-control"></select>
     </div>
     <div class="col-md-5">
         <label>Proveedor</label>
-        <select name="" id="proveedor_compra_lst" class="form-control"></select>
+        <select name="" id="proveedor_compra" class="form-control"></select>
     </div>
      <div class="col-md-3">
         <label>Deposito</label>
-        <select name="" id="deposito_lst" class="form-control"></select>
+        <select name="" id="deposito" class="form-control"></select>
     </div>
      <div class="col-md-3">
         <label>Tipo de Pago</label>
-        <select name="" id="tipo_pago_lst" class="form-control"></select>
+        <select name="" id="tipo_pago" class="form-control"></select>
     </div>
     
        <div class="col-md-12">
@@ -82,7 +82,7 @@
     </div>
     <div class="col-md-4">
         <label>Producto</label>
-        <select name="" id="material_lst" class="form-control"></select>
+        <select name="" id="material" class="form-control"></select>
     </div>
     <div class="col-md-3">
         <label>Cantidad</label>

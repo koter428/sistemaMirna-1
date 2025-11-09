@@ -10,9 +10,9 @@ Class DB {
     
     public function __construct() {
         $this->host = 'localhost';
-        $this->base_de_datos = 'sistema_mirna';
+        $this->base_de_datos = 'cyberfix';
         $this->usuario = 'root';
-        $this->pass = '';
+        $this->pass = '2001';
         $this->charset = 'utf8mb4';  
     }
     

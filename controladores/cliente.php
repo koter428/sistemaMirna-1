@@ -9,22 +9,17 @@ if (isset($_POST['dame_activos'])) {
 function dameActivos() {
 
     $base_datos = new DB();
-    $query = $base_datos->conectar()->prepare("SELECT  cod_cliente, 
-nombre_cliente,
- apellido_cliente, 
- cedula_cliente, telefono_cliente,
-  cod_ciudad, 
-  direccion_cliente,
-   estado
-	FROM clientes
-	estado = 'ACTIVO'");
-
-    $query->execute();
-
-    if ($query->rowCount()) {
-        print_r(json_encode($query->fetchAll(PDO::FETCH_OBJ)));
-    } else {
-        echo '0';
+    try {
+        $query = $base_datos->conectar()->prepare("SELECT cod_cliente, nombre_cliente, apellido_cliente, cedula_cliente, telefono_cliente, cod_ciudad, direccion_cliente, estado FROM clientes WHERE estado = 'ACTIVO'");
+        $query->execute();
+        $datos = $query->fetchAll(PDO::FETCH_OBJ);
+        if (empty($datos)) {
+            error_log("[dameActivos] No se encontraron clientes activos.");
+        }
+        echo json_encode($datos);
+    } catch (Exception $e) {
+        error_log("[dameActivos] Error: " . $e->getMessage());
+        echo json_encode([]);
     }
 }
 
@@ -35,19 +30,7 @@ if (isset($_POST['dame_todo'])) {
 function dameTodo() {
 
     $base_datos = new DB();
-    $query = $base_datos->conectar()->prepare("SELECT cl.cod_cliente, 
-cl.nombre_cliente,
- cl.apellido_cliente, 
- cl.cedula_cliente,
-  cl.telefono_cliente,
-  cl.cod_ciudad,
-  c.descripcion, 
-  cl.direccion_cliente,
-   cl.estado,
-   c.descripcion as ciudad
-	FROM clientes cl
-	JOIN ciudades c
-	ON c.cod_ciudad = cl.cod_ciudad ");
+    $query = $base_datos->conectar()->prepare("SELECT cl.cod_cliente, cl.nombre_cliente, cl.apellido_cliente, cl.cedula_cliente, cl.telefono_cliente, cl.cod_ciudad, c.descripcion, cl.direccion_cliente, cl.estado, c.descripcion as ciudad FROM clientes cl JOIN ciudades c ON c.cod_ciudad = cl.cod_ciudad ");
 
     $query->execute();
 

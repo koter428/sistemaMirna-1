@@ -27,7 +27,7 @@
     </div>
     <div class="col-md-6">
         <label>Ciudad</label>
-        <select id="ciudad_lst" class="form-control"></select>
+        <select id="ciudad" class="form-control"></select>
     </div>
     <div class="col-md-6">
         <label>Direccion</label>
@@ -35,7 +35,7 @@
     </div>
     <div class="col-md-6">
         <label>Estado</label>
-        <select  id="estado_lst" class="form-control">
+        <select  id="estado" class="form-control">
             <option value="ACTIVO">ACTIVO</option>
             <option value="INACTIVO">INACTIVO</option>
         </select>

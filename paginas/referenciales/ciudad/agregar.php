@@ -15,7 +15,7 @@
     </div>
     <div class="col-md-6">
         <label>Estado</label>
-        <select  id="estado_lst" class="form-control">
+        <select  id="estado" class="form-control">
             <option value="ACTIVO">ACTIVO</option>
             <option value="INACTIVO">INACTIVO</option>
         </select>

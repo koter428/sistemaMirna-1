@@ -45,7 +45,7 @@
             </li>
             <li class="nav-small-cap">
               <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
-              <span class="hide-menu">Referenciales</span>
+              <span class="hide-menu">Informes Referenciales</span>
             </li>
 <!--            <li class="sidebar-item">
                 <a class="sidebar-link" href="#" onclick="mostrarListarCiudad(); return false;" aria-expanded="false">
@@ -91,14 +91,14 @@
            
             <li class="nav-small-cap">
               <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
-              <span class="hide-menu">COMPRAS</span>
+              <span class="hide-menu">MODULO COMPRAS</span>
             </li>
             <li class="sidebar-item">
               <a class="sidebar-link" href="#" onclick="mostrarListarPedidoCompra(); return false;" aria-expanded="false">
                 <span>
                   <i class="ti ti-login"></i>
                 </span>
-                <span class="hide-menu">Pedido</span>
+                <span class="hide-menu">Pedido Compras</span>
               </a>
             </li>
             <li class="sidebar-item">
@@ -106,7 +106,7 @@
                 <span>
                   <i class="ti ti-login"></i>
                 </span>
-                <span class="hide-menu">Presupuesto</span>
+                <span class="hide-menu">Presupuesto Proveedor</span>
               </a>
             </li>
             <li class="sidebar-item">
@@ -124,13 +124,150 @@
                 </span>
                 <span class="hide-menu">Factura</span>
               </a>
-            </li>
+            </li>            
             <li class="sidebar-item">
                 <a class="sidebar-link" onclick="mostrarListarNotaCreditoCompra(); return false;" href="#" aria-expanded="false">
                 <span>
                   <i class="ti ti-login"></i>
                 </span>
                 <span class="hide-menu">Nota de Credito/Debito</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+                <a class="sidebar-link" onclick="mostrarListarRemision(); return false;" href="#" aria-expanded="false">
+                <span>
+                  <i class="ti ti-login"></i>
+                </span>
+                <span class="hide-menu">Nota de Remisión</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+                <a class="sidebar-link" onclick="mostrarListarAjusteStock(); return false;" href="#" aria-expanded="false">
+                <span>
+                  <i class="ti ti-login"></i>
+                </span>
+                <span class="hide-menu">Ajuste de Stock</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+                <a class="sidebar-link" onclick="mostrarListarInforme(); return false;" href="#" aria-expanded="false">
+                <span>
+                  <i class="ti ti-login"></i>
+                </span>
+                <span class="hide-menu">Informes de Movimientos</span>
+              </a>
+            </li>
+                       <li class="nav-small-cap">
+              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+              <span class="hide-menu">MODULO SERVICIOS</span>
+          <li class="sidebar-item">
+              
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="#" onclick="mostrarListarRecepcionEquipo(); return false;" aria-expanded="false">
+                <span>
+                  <i class="ti ti-login"></i>
+                </span>
+                <span class="hide-menu">recepcion de equipo</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="#" onclick="mostrarListarOrdenCompra(); return false;" aria-expanded="false">
+                <span>
+                  <i class="ti ti-login"></i>
+                </span>
+                <span class="hide-menu">Diagnostico de los Equipos</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="#" onclick="mostrarListarRecepcionEquipo(); return false;" aria-expanded="false">
+                <span>
+                  <i class="ti ti-login"></i>
+                </span>
+                <span class="hide-menu">Presupuesto</span>
+              </a>
+            </li>
+           <li class="sidebar-item">
+              <a class="sidebar-link" href="#" onclick="mostrarListarOrdenCompra(); return false;" aria-expanded="false">
+                <span>
+                  <i class="ti ti-login"></i>
+                </span>
+                <span class="hide-menu">Generar orden de servicios</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+                <a class="sidebar-link" onclick="mostrarListarNotaCreditoCompra(); return false;" href="#" aria-expanded="false">
+                <span>
+                  <i class="ti ti-login"></i>
+                </span>
+                <span class="hide-menu">Registrar Insumos Utilizados</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+                <a class="sidebar-link" onclick="mostrarListarRemision(); return false;" href="#" aria-expanded="false">
+                <span>
+                  <i class="ti ti-login"></i>
+                </span>
+                <span class="hide-menu">Finalizacion y Entrega del Equipo</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+                <a class="sidebar-link" onclick="mostrarListarAjusteStock(); return false;" href="#" aria-expanded="false">
+                <span>
+                  <i class="ti ti-login"></i>
+                </span>
+                <span class="hide-menu">Registrar Reclamos</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+                <a class="sidebar-link" onclick="mostrarListarInforme(); return false;" href="#" aria-expanded="false">
+                <span>
+                  <i class="ti ti-login"></i>
+                </span>
+                <span class="hide-menu">Informes de Movimientos</span>
+              </a>
+            </li>
+            <li class="nav-small-cap">
+              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+              <span class="hide-menu">MODULO VENTAS</span>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="#" onclick="mostrarListarPedidoCompra(); return false;" aria-expanded="false">
+                <span>
+                  <i class="ti ti-login"></i>
+                </span>
+                <span class="hide-menu">apertura y Generar cierre de caja</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="#" onclick="mostrarListarPresupuestoCompra(); return false;" aria-expanded="false">
+                <span>
+                  <i class="ti ti-login"></i>
+                </span>
+                <span class="hide-menu">Recaudaciones a Depositar</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="#" onclick="mostrarListarOrdenCompra(); return false;" aria-expanded="false">
+                <span>
+                  <i class="ti ti-login"></i>
+                </span>
+                <span class="hide-menu">Registrar pedidos de Cliente</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="#" aria-expanded="false" onclick="mostrarListarFacturaCompra(); return false;">
+                <span>
+                  <i class="ti ti-login"></i>
+                </span>
+                <span class="hide-menu">Facturas y cuentas a cobrar</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+                <a class="sidebar-link" onclick="mostrarListarNotaCreditoCompra(); return false;" href="#" aria-expanded="false">
+                <span>
+                  <i class="ti ti-login"></i>
+                </span>
+                <span class="hide-menu">Registrar cobros</span>
               </a>
             </li>
             
@@ -147,15 +284,7 @@
                 <span>
                   <i class="ti ti-login"></i>
                 </span>
-                <span class="hide-menu">Remisión</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-                <a class="sidebar-link" onclick="mostrarListarAjusteStock(); return false;" href="#" aria-expanded="false">
-                <span>
-                  <i class="ti ti-login"></i>
-                </span>
-                <span class="hide-menu">Ajuste de Stock</span>
+                <span class="hide-menu">Generar arqueo</span>
               </a>
             </li>
             <li class="sidebar-item">
@@ -163,13 +292,39 @@
                 <span>
                   <i class="ti ti-login"></i>
                 </span>
-                <span class="hide-menu">Informes</span>
+                <span class="hide-menu">Informes de Movimientos</span>
               </a>
             </li>
-           
-           
-          
-           
+            <ul>
+           <li class="nav-small-cap">
+              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+              <span class="hide-menu">Administracion</span>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="#" onclick="mostrarListarPedidoCompra(); return false;" aria-expanded="false">
+                <span>
+                  <i class="ti ti-login"></i>
+                </span>
+                <span class="hide-menu">Gestion de Usuarios</span>
+              </a>
+            </li>
+          </ul>
+          <li class="sidebar-item">
+              <a class="sidebar-link" href="#" onclick="mostrarListarPedidoCompra(); return false;" aria-expanded="false">
+                <span>
+                  <i class="ti ti-login"></i>
+                </span>
+                <span class="hide-menu">Manual de Usuarios</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="#" onclick="mostrarListarPedidoCompra(); return false;" aria-expanded="false">
+                <span>
+                  <i class="ti ti-login"></i>
+                </span>
+                <span class="hide-menu">Manual de Seguridad</span>
+              </a>
+            </li>
           </ul>
           <div class="unlimited-access hide-menu bg-light-primary position-relative mb-7 mt-5 rounded">
             <div class="d-flex">
@@ -208,7 +363,7 @@
           </ul>
           <div class="navbar-collapse justify-content-end px-0" id="navbarNav">
             <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-end">
-              <a href="https://adminmart.com/product/modernize-free-bootstrap-admin-dashboard/" target="_blank" class="btn btn-primary">Download Free</a>
+              
               <li class="nav-item dropdown">
                 <a class="nav-link nav-icon-hover" href="javascript:void(0)" id="drop2" data-bs-toggle="dropdown"
                   aria-expanded="false">
@@ -249,10 +404,10 @@
                   </div>
                   <div>
                     <select class="form-select">
-                      <option value="1">March 2023</option>
-                      <option value="2">April 2023</option>
-                      <option value="3">May 2023</option>
-                      <option value="4">June 2023</option>
+                      <option value="1">March 2025</option>
+                      <option value="2">April 2025</option>
+                      <option value="3">May 2025</option>
+                      <option value="4">June 2025</option>
                     </select>
                   </div>
                 </div>
@@ -269,7 +424,7 @@
                     <h5 class="card-title mb-9 fw-semibold">Yearly Breakup</h5>
                     <div class="row align-items-center">
                       <div class="col-8">
-                        <h4 class="fw-semibold mb-3">$36,358</h4>
+                        <h4 class="fw-semibold mb-3">₲36,358</h4>
                         <div class="d-flex align-items-center mb-3">
                           <span
                             class="me-1 rounded-circle bg-light-success round-20 d-flex align-items-center justify-content-center">
@@ -305,7 +460,7 @@
                     <div class="row alig n-items-start">
                       <div class="col-8">
                         <h5 class="card-title mb-9 fw-semibold"> Monthly Earnings </h5>
-                        <h4 class="fw-semibold mb-3">$6,820</h4>
+                        <h4 class="fw-semibold mb-3">₲6,820</h4>
                         <div class="d-flex align-items-center pb-1">
                           <span
                             class="me-2 rounded-circle bg-light-danger round-20 d-flex align-items-center justify-content-center">
@@ -374,6 +529,7 @@
   <script src="vistas/remision.js"></script>
   <script src="vistas/ajuste_stock.js"></script>
   <script src="vistas/informes.js"></script>
+  <script src="vistas/recepcion_equipo.js"></script>
 </body>
 
 </html>

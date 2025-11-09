@@ -7,7 +7,7 @@
         </div>
         <div class="col-md-6">
             <label>Movimiento</label>
-            <select id="movimiento_lst" class="form-control">
+            <select id="movimiento" class="form-control">
                 <option value="0">Selecciona un movimiento</option>
                 <option value="Pedido">Pedido</option>
                 <option value="Presupuesto">Presupuesto</option>
@@ -23,7 +23,7 @@
         </div>
         <div class="col-md-6">
             <label>Especificacion</label>
-            <select id="especificacion_lst" class="form-control">
+            <select id="especificacion" class="form-control">
 
 
             </select>

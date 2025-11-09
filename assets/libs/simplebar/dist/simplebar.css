@@ -49,10 +49,10 @@
   box-sizing: border-box !important;
   position: relative;
   display: block;
-  height: 100%; /* Required for horizontal native scrollbar to not appear if parent is taller than natural height */
+  height: 100%; /* Necesario para que la barra de desplazamiento nativa horizontal no aparezca si el elemento principal es más alto que la altura natural */
   width: auto;
-  max-width: 100%; /* Not required for horizontal scroll to trigger */
-  max-height: 100%; /* Needed for vertical scroll to trigger */
+  max-width: 100%; /* No es necesario para que se active el desplazamiento horizontal. */
+  max-height: 100%; /* Necesario para que se active el desplazamiento vertical. */
   scrollbar-width: none;
   -ms-overflow-style: none;
 }

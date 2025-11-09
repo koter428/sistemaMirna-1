@@ -15,11 +15,11 @@
     </div>
     <div class="col-md-3">
         <label for="">Sucursal</label>
-        <select name="" id="sucursal_lst" class="form-control"></select>
+        <select name="" id="sucursal" class="form-control"></select>
     </div>
     <div class="col-md-4">
         <label for="">Usuario</label>
-        <input type="text" id="usuario_lst" class="form-control" readonly value="<?= $_SESSION['nom_apellido']?>">
+        <input type="text" id="usuario" class="form-control" readonly value="<?= $_SESSION['nom_apellido']?>">
           
     </div>
     <div class="col-md-3">
@@ -28,7 +28,7 @@
     </div>
     <div class="col-md-12">
         <label>Facturas de compra</label>
-        <select name="" id="facturas_compra_lst" class="form-control"></select>
+        <select name="" id="facturas_compra" class="form-control"></select>
     </div>
     <div class="col-md-3">
         <label for="">Nro de Factura</label>
@@ -44,7 +44,7 @@
     </div>
     <div class="col-md-3">
         <label for="">Tipo</label>
-        <select name="" id="tipo_lst" class="form-control">
+        <select name="" id="tipo" class="form-control">
             <option value="CREDITO">CREDITO</option>
             <option value="DEBITO">DEBITO</option>
         </select>

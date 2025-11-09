@@ -14,11 +14,11 @@
         </div>
         <div class="col-md-3">
             <label for="">Sucursal</label>
-            <select name="" id="sucursal_lst" class="form-control"></select>
+            <select name="" id="sucursal" class="form-control"></select>
         </div>
         <div class="col-md-4">
             <label for="">Usuario</label>
-            <input type="text" id="usuario_lst" class="form-control" readonly value="<?= $_SESSION['nom_apellido'] ?>">
+            <input type="text" id="usuario" class="form-control" readonly value="<?= $_SESSION['nom_apellido'] ?>">
 
         </div>
         <div class="col-md-4">
@@ -34,7 +34,7 @@
         </div>
         <div class="col-md-6">
             <label for="">Deposito</label>
-            <select id="deposito_lst" class="form-control">
+            <select id="deposito" class="form-control">
             </select>
         </div>
        
@@ -44,7 +44,7 @@
         </div>
         <div class="col-md-6">
             <label>Material</label>
-            <select name="" id="material_lst" class="form-control"></select>
+            <select name="" id="material" class="form-control"></select>
         </div>
         <div class="col-md-4">
             <label>Cantidad</label>

@@ -14,11 +14,11 @@
     </div>
     <div class="col-md-4">
         <label for="">Sucursal</label>
-        <select name="" id="sucursal_lst" class="form-control"></select>
+        <select name="" id="sucursal" class="form-control"></select>
     </div>
     <div class="col-md-4">
         <label for="">Usuario</label>
-        <input type="text" id="usuario_lst" class="form-control" readonly value="<?= $_SESSION['nombre_user']?>">
+        <input type="text" id="usuario" class="form-control" readonly value="<?= $_SESSION['nombre_user']?>">
           
     </div>
     <div class="col-md-3">
@@ -32,7 +32,7 @@
     </div>
     <div class="col-md-4">
         <label>Orden de Compra</label>
-        <select name="" id="orden_compra_lst" class="form-control"></select>
+        <select name="" id="orden_compra" class="form-control"></select>
     </div>
 
     <div class="col-md-4">
@@ -45,15 +45,15 @@
     </div>
     <div class="col-md-4">
         <label>Proveedor</label>
-        <select name="" id="proveedor_compra_lst" class="form-control"></select>
+        <select name="" id="proveedor_compra" class="form-control"></select>
     </div>
      <div class="col-md-4">
         <label>Deposito</label>
-        <select name="" id="deposito_lst" class="form-control"></select>
+        <select name="" id="deposito" class="form-control"></select>
     </div>
     <div class="col-md-4">
-    <label for="condicion_lst">Condición</label>
-    <select name="condicion" id="condicion_lst" class="form-control">
+    <label for="condicion">Condición</label>
+    <select name="condicion" id="condicion" class="form-control">
         <option value="credito">Crédito</option>
         <option value="contado">Contado</option>
     </select>
@@ -65,7 +65,7 @@
     </div>
     <div class="col-md-4">
         <label>Material</label>
-        <select name="" id="material_lst" class="form-control"></select>
+        <select name="" id="material" class="form-control"></select>
     </div>
     <div class="col-md-3">
         <label>Cantidad</label>

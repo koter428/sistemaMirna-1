@@ -27,19 +27,19 @@
     </div>
     <div class="col-md-4">
         <label>Categoria</label>
-        <select  id="categoria_lst" class="form-control"></select>
+        <select  id="categoria" class="form-control"></select>
     </div>
     <div class="col-md-4">
         <label>Tipo</label>
-        <select  id="tipo_lst" class="form-control"></select>
+        <select  id="tipo" class="form-control"></select>
     </div>
     <div class="col-md-4">
         <label>Marca</label>
-        <select  id="marca_lst" class="form-control"></select>
+        <select  id="marca" class="form-control"></select>
     </div>
     <div class="col-md-4">
         <label>Estado</label>
-        <select  id="estado_lst" class="form-control">
+        <select  id="estado" class="form-control">
             <option value="ACTIVO">ACTIVO</option>
             <option value="INACTIVO">INACTIVO</option>
         </select>
