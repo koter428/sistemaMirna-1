@@ -1,5 +1,5 @@
 function mostrarListarCliente() {
-    let contenido = dameContenido("modelo/referenciales/cliente/listar.php");
+    let contenido = dameContenido("paginas/referenciales/cliente/listar.php");
     $("#contenido-principal").html(contenido);
     cargarTablaClientes();
 }
@@ -7,7 +7,7 @@ function mostrarListarCliente() {
 //-----------------------------------------------------------------------------
 //-----------------------------------------------------------------------------
 function mostrarAgregarClientees() {
-    let contenido = dameContenido("modelo/referenciales/cliente/agregar.php");
+    let contenido = dameContenido("paginas/referenciales/cliente/agregar.php");
     $("#contenido-principal").html(contenido);
     cargarListaCiudad("#ciudad_lst");
 }
@@ -120,7 +120,7 @@ $(document).on("click", ".editar-cliente", function (evt) {
 
             } else {
                 let json_registro = JSON.parse(registro);
-                let contenido = dameContenido("modelo/referenciales/cliente/agregar.php");
+                let contenido = dameContenido("paginas/referenciales/cliente/agregar.php");
                 $("#contenido-principal").html(contenido);
 
                 cargarListaCiudad("#ciudad_lst");

@@ -13,7 +13,7 @@
                                     <label>Código:</label>
                                     <input type="text" class="form-control" id="cod_recepcion" readonly>
                                 </div>
-                            </div> 
+                            </div>
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>Fecha:</label>

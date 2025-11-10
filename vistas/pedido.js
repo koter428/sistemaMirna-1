@@ -1,5 +1,5 @@
 function mostrarListarPedidoCompra() {
-    let contenido = dameContenido("modelo/movimientos/compra/pedido/listar.php");
+    let contenido = dameContenido("paginas/movimientos/compra/pedido/listar.php");
     $("#contenido-principal").html(contenido);
     cargarTablaPedido(".pedido_compra");
     console.log(contenido);
@@ -8,7 +8,7 @@ function mostrarListarPedidoCompra() {
 //------------------------------------------------------------------------------
 //------------------------------------------------------------------------------
 function mostrarAgregarPedidoCompra() {
-    let contenido = dameContenido("modelo/movimientos/compra/pedido/agregar.php");
+    let contenido = dameContenido("paginas/movimientos/compra/pedido/agregar.php");
     $("#contenido-principal").html(contenido);
     cargarListaSucursal("#sucursal_lst");
     cargarListasProducto("#material_lst");
@@ -220,7 +220,7 @@ $(document).on("click", ".editar-pedido", function (evt) {
         confirmButtonText: "Si"
     }).then((result) => {
         if (result.isConfirmed) {
-            let contenido = dameContenido("modelo/movimientos/compra/pedido/agregar.php");
+            let contenido = dameContenido("paginas/movimientos/compra/pedido/agregar.php");
             $("#contenido-principal").html(contenido);
             cargarListaSucursal("#sucursal_lst");
             cargarListasProducto("#material_lst");
@@ -319,7 +319,7 @@ function cargarListaPedidoPendientes(componente) {
 //------------------------------------------------------------------------------
 //------------------------------------------------------------------------------
 function imprimirPedido(id) {
-    window.open("modelo/movimientos/compra/pedido/print.php?id=" + id);
+    window.open("paginas/movimientos/compra/pedido/print.php?id=" + id);
 }
 //------------------------------------------------------------------------------
 //------------------------------------------------------------------------------

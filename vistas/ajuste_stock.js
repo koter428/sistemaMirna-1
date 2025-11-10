@@ -1,5 +1,5 @@
 function mostrarListarAjusteStock() {
-    let contenido = dameContenido("modelo/movimientos/compra/ajuste_stock/listar.php");
+    let contenido = dameContenido("paginas/movimientos/compra/ajuste_stock/listar.php");
     $("#contenido-principal").html(contenido);
     cargarTablaAjusteStock("#ajuste_stock_compra");
 }
@@ -7,7 +7,7 @@ function mostrarListarAjusteStock() {
 //------------------------------------------------------------------------------
 //------------------------------------------------------------------------------
 function mostrarAgregarAjusteStock() {
-    let contenido = dameContenido("modelo/movimientos/compra/ajuste_stock/agregar.php");
+    let contenido = dameContenido("paginas/movimientos/compra/ajuste_stock/agregar.php");
     $("#contenido-principal").html(contenido);
     cargarListaSucursal("#sucursal_lst");
     cargarListasProducto("#material_lst");
@@ -246,7 +246,7 @@ function cargarListaPedidoPendientes2(componente) {
 //------------------------------------------------------------------------------
 //------------------------------------------------------------------------------
 function imprimirAjuste(id){
-    window.open("modelo/movimientos/compra/ajuste_stock/print.php?id="+id);
+    window.open("paginas/movimientos/compra/ajuste_stock/print.php?id="+id);
 }
 //------------------------------------------------------------------------------
 //------------------------------------------------------------------------------

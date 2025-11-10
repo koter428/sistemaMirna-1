@@ -1,5 +1,5 @@
 function mostrarListarProveedor() {
-    let contenido = dameContenido("modelo/referenciales/proveedor/listar.php");
+    let contenido = dameContenido("paginas/referenciales/proveedor/listar.php");
     $("#contenido-principal").html(contenido);
     cargarTablaProveedors();
 }
@@ -7,7 +7,7 @@ function mostrarListarProveedor() {
 //-----------------------------------------------------------------------------
 //-----------------------------------------------------------------------------
 function mostrarAgregarProveedores() {
-    let contenido = dameContenido("modelo/referenciales/proveedor/agregar.php");
+    let contenido = dameContenido("paginas/referenciales/proveedor/agregar.php");
     $("#contenido-principal").html(contenido);
     cargarListaCiudad("#ciudad_lst");
 }
@@ -130,7 +130,7 @@ $(document).on("click", ".editar-proveedor", function (evt) {
 
             } else {
                 let json_registro = JSON.parse(registro);
-                let contenido = dameContenido("modelo/referenciales/proveedor/agregar.php");
+                let contenido = dameContenido("paginas/referenciales/proveedor/agregar.php");
                 $("#contenido-principal").html(contenido);
 
                 cargarListaCiudad("#ciudad_lst");

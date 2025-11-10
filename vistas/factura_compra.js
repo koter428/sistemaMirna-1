@@ -1,5 +1,5 @@
 function mostrarListarFacturaCompra() {
-    let contenido = dameContenido("modelo/movimientos/compra/factura_compra/listar.php");
+    let contenido = dameContenido("paginas/movimientos/compra/factura_compra/listar.php");
     $("#contenido-principal").html(contenido);
     cargarTablaFacturaCompra();
 }
@@ -7,7 +7,7 @@ function mostrarListarFacturaCompra() {
 //------------------------------------------------------------------------------
 //------------------------------------------------------------------------------
 function mostrarAgregarFacturaCompra() {
-    let contenido = dameContenido("modelo/movimientos/compra/factura_compra/agregar.php");
+    let contenido = dameContenido("paginas/movimientos/compra/factura_compra/agregar.php");
     $("#contenido-principal").html(contenido);
     cargarListaSucursal("#sucursal_lst");
     cargarListasProducto("#material_lst");
@@ -290,7 +290,7 @@ function cargarTablaFacturaCompra() {
 //----------------------------------------------------------------------------
 //----------------------------------------------------------------------------
 function imprimirFacturaCompra(id) {
-    window.open("modelo/movimientos/compra/factura_compra/print.php?id=" + id);
+    window.open("paginas/movimientos/compra/factura_compra/print.php?id=" + id);
 }
 //----------------------------------------------------------------------------
 //----------------------------------------------------------------------------

@@ -1,5 +1,5 @@
 function mostrarListarVehiculo() {
-    let contenido = dameContenido("modelo/referenciales/vehiculo/listar.php");
+    let contenido = dameContenido("paginas/referenciales/vehiculo/listar.php");
     $(".contenido-principal").html(contenido);
     cargarTablaVehiculo("#vehiculo_tb");
     console.log(contenido);
@@ -8,7 +8,7 @@ function mostrarListarVehiculo() {
 //----------------------------------------------------------------------------
 //----------------------------------------------------------------------------
 function mostrarAgregarVehiculo() {
-    let contenido = dameContenido("modelo/referenciales/vehiculo/agregar.php");
+    let contenido = dameContenido("paginas/referenciales/vehiculo/agregar.php");
     $(".contenido-principal").html(contenido);
     cargarListaMarca("#marca_lst")
 }
@@ -27,7 +27,7 @@ function cancelarVehiculo() {
         confirmButtonText: "Si"
     }).then((result) => {
         if (result.isConfirmed) {
-            let contenido = dameContenido("modelo/referenciales/vehiculo/listar.php");
+            let contenido = dameContenido("paginas/referenciales/vehiculo/listar.php");
             $(".contenido-principal").html(contenido);
             cargarTablaVehiculo();
         }
@@ -189,7 +189,7 @@ $(document).on("click", ".editar-vehiculo", function (evt) {
             } else {
                 let json_data = JSON.parse(response);
                 //abrir ventana
-                let contenido = dameContenido("modelo/referenciales/vehiculo/agregar.php");
+                let contenido = dameContenido("paginas/referenciales/vehiculo/agregar.php");
                 $(".contenido-principal").html(contenido);
 
     
@@ -277,7 +277,7 @@ console.log(data);
 //-------------------------------------------------------------------------------
 //-------------------------------------------------------------------------------
 function imprimirVehiculo(){
-    window.open("modelo/referenciales/vehiculo/print.php");
+    window.open("paginas/referenciales/vehiculo/print.php");
 }
 
 

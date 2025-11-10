@@ -1,5 +1,5 @@
 function mostrarListarRemision() {
-    let contenido = dameContenido("modelo/movimientos/compra/remision/listar.php");
+    let contenido = dameContenido("paginas/movimientos/compra/remision/listar.php");
     $("#contenido-principal").html(contenido);
     cargarTablaRemision();
 }
@@ -7,7 +7,7 @@ function mostrarListarRemision() {
 //------------------------------------------------------------------------------
 //------------------------------------------------------------------------------
 function mostrarAgregarRemision() {
-    let contenido = dameContenido("modelo/movimientos/compra/remision/agregar.php");
+    let contenido = dameContenido("paginas/movimientos/compra/remision/agregar.php");
     $("#contenido-principal").html(contenido);
     cargarListaSucursal("#sucursal_lst");
     cargarListasProducto("#material_lst");
@@ -299,7 +299,7 @@ function cargarListaPedidoPendientes2(componente) {
 //------------------------------------------------------------------------------
 //------------------------------------------------------------------------------
 function imprimirRemision(id){
-    window.open("modelo/movimientos/compra/remision/print.php?id="+id);
+    window.open("paginas/movimientos/compra/remision/print.php?id="+id);
 }
 //------------------------------------------------------------------------------
 //------------------------------------------------------------------------------

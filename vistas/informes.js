@@ -1,5 +1,5 @@
 function mostrarListarInforme() {
-    let contenido = dameContenido("modelo/movimientos/compra/informes/principal.php");
+    let contenido = dameContenido("paginas/movimientos/compra/informes/principal.php");
     $("#contenido-principal").html(contenido);
     dameFechaActual("desde");
     dameFechaActual("hasta");
@@ -65,5 +65,5 @@ function imprimirInforme(){
         return;
     }
     
-    window.open(`modelo/movimientos/compra/informes/print/${reporte}.php?desde=${desde}&hasta=${hasta}`);
+    window.open(`paginas/movimientos/compra/informes/print/${reporte}.php?desde=${desde}&hasta=${hasta}`);
 }

@@ -1,5 +1,5 @@
 function mostrarListarDeposito() {
-    let contenido = dameContenido("modelo/referenciales/deposito/listar.php");
+    let contenido = dameContenido("paginas/referenciales/deposito/listar.php");
     $("#contenido-principal").html(contenido);
     cargarTablaDepositos();
 }
@@ -7,7 +7,7 @@ function mostrarListarDeposito() {
 //-----------------------------------------------------------------------------
 //-----------------------------------------------------------------------------
 function mostrarAgregarDeposito() {
-    let contenido = dameContenido("modelo/referenciales/deposito/agregar.php");
+    let contenido = dameContenido("paginas/referenciales/deposito/agregar.php");
     $("#contenido-principal").html(contenido);
     cargarListaSucursal("#sucursal_lst")
 }
@@ -106,7 +106,7 @@ $(document).on("click", ".editar-deposito", function (evt) {
 
             } else {
                 let json_registro = JSON.parse(registro);
-                let contenido = dameContenido("modelo/referenciales/deposito/agregar.php");
+                let contenido = dameContenido("paginas/referenciales/deposito/agregar.php");
                 $("#contenido-principal").html(contenido);
 
                 $("#id_deposito").val(json_registro['cod_deposito']);
